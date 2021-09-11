@@ -1,0 +1,217 @@
+h1 {
+	font-family: "Style Script", cursive;
+	text-align: center;
+	font-size: 5rem;
+	margin: 20px auto;
+	/* display: none; */
+}
+h1 span {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 20px 10px 30px;
+	color: #ff476e;
+}
+h1 .fas:first-child {
+	font-size: 6rem;
+	color: #fff;
+	text-shadow: 0 0 20px #65c0ff;
+}
+h1 .fas:last-child {
+	font-size: 6rem;
+	color: #fff;
+	text-shadow: 0 0 20px #ffb7b7;
+}
+h2 {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+h2 + p {
+	margin: 20px auto 40px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+h3 {
+	font-size: 25px;
+	margin: 0 auto 20px;
+	color: #ff5c68;
+}
+.card {
+	margin: 10px 10px;
+	transition: 0.3s;
+}
+img {
+}
+.card img {
+	transition: 0.3s;
+}
+.card:hover img {
+	padding: 10px;
+	/* border: 5px solid rgba(0, 156, 255, 0.8); */
+}
+.card:hover .icon .fas {
+	animation: icon 1s infinite;
+}
+@keyframes icon {
+	0 {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-90deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.icon {
+	border-radius: 50%;
+	background-color: #ffefef;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: -14px;
+	left: -25px;
+}
+dl {
+	border-bottom: 1px dotted #ccc;
+	display: flex;
+	/* flex-flow: no-wrap row; */
+}
+dt {
+	flex: 0 0 75px;
+	text-transform: capitalize;
+}
+dd {
+	flex: 0 0 calc(100% - 75px);
+	word-wrap: break-word;
+}
+html,
+body {
+	background-color: #ffefef;
+}
+.modal-title {
+	font-weight: bold;
+	font-size: 2rem;
+}
+.modal-body img {
+	border-radius: 10px;
+}
+.modalImg {
+	overflow: hidden;
+	margin: 0;
+}
+.modalImg img {
+	padding: 0;
+}
+.card-body {
+	position: relative;
+	padding: 8px;
+}
+
+.card-body .fas,
+.card-body .far {
+	float: right;
+	position: relative;
+	transform: translateY(34%);
+	font-size: 25px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.fas {
+	font-size: 2.5rem;
+}
+.card.male .fas {
+	color: #009cff;
+}
+.card.female .fas {
+	color: #fb7979;
+}
+
+.card-body .fas.added {
+	color: #f00;
+}
+
+.card-body .fas.add,
+.card-body .fas.del {
+	color: #f00;
+}
+.card-body .far.add {
+	color: #ccc;
+}
+.card-body .fas:hover,
+.card-body .far:hover {
+	transform: scale(2);
+}
+.card-title {
+	font-size: 14px;
+	padding: 5px 0;
+	font-weight: bold;
+	text-align: center;
+}
+.dataFilter {
+	text-align: center;
+	margin: 20px auto 20px;
+}
+.dataFilter label {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.searchInput {
+	font-size: 30px;
+}
+.advended {
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px;
+	box-sizing: border-box;
+	box-shadow: 0 0 20px rgba(250, 100, 100, 0.1);
+	margin-bottom: 30px;
+	text-align: center;
+}
+.advended .row .col-xs-12 {
+	border-right: 1px dashed #ccc;
+}
+.advended .row .col-xs-12:last-child {
+	border: 0;
+}
+.none {
+	display: none;
+}
+#star12 {
+	width: 70%;
+	display: inline;
+}
+#ageStart,
+#ageEnd {
+	display: inline-block;
+	display: inline;
+	width: 80px;
+}
+#advOk {
+	width: 100px;
+	font-size: 25px;
+	margin-top: 30px;
+}
+@media only screen and (max-width: 767px) {
+	h3 {
+		margin: 0 auto 10px;
+	}
+	.advended {
+		padding: 30px 50px;
+	}
+	.advended .row .col-xs-12 {
+		border: 0;
+		border-bottom: 1px dashed #ccc;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	.advended .row .col-xs-12:last-child {
+		border: 0;
+		margin-bottom: 0;
+	}
+	#advOk {
+		margin-top: 20px;
+	}
+}
